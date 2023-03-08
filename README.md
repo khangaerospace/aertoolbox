@@ -1,5 +1,7 @@
+# aertoolbox
+
 <p class="aligncenter">
     <img src="images/aertoolbox.png" alt="centered image" />
-</p>
-# aertoolbox
+</p> 
+
 Software for Aerospace analysis
