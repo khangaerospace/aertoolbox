@@ -10,6 +10,7 @@ function [x,fmin,path] = newton_opt(fun,x0,tol)
         xi = xi - (ddf\df);
         nor(i) = norm(ddf\df);
         path = [path,xi];
+        fprintf('%d %.4e\n', i, norm(ddf\df));
         i = i+1;
     end
     plot(count,nor)
