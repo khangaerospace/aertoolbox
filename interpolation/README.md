@@ -1,6 +1,6 @@
 # Interpolation
 
-NOTE: This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematics to be rendered.
+**NOTE:** This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematics to be rendered.
 
 Data analysis is crucial in many engineering fields. In order to estimate the value of y at arbitrary points x, which may not be included in the given n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$, interpolation is often used.
 
@@ -36,3 +36,25 @@ $$y_{2} = p_{1}(x_{2}) =  a_{0} +a_{i}x_{2}$$
 We can re-write this in matrix form:
 
 $$\begin{pmatrix} 1 & x_{1} \\\\ 1 & x_{2}\end{pmatrix}\begin{pmatrix}a_{0}\\\\ a_{1}\end{pmatrix} = \begin{pmatrix} y_{1} \\\\ y_{2}\end{pmatrix}$$
+
+The matrix on the left hand side is called the Vandermonde Matrix. We can see that $(x_{1} \neq x_{2})$  for the rows ( or columns) of the matrix to be linearly independent and the matrix is non-singular. We can then find a unique solution ($a_{0}, a_{1}$). We can then evaluate the interpolant at any arbitrary point x by evaluating $p_{1}(x) = a_{0} + a_{1}x$
+
+Because th matrix is small, we can express an explicit expressions for the linear interpolant:
+
+$$p_{1}(x) = (1- \frac{x-x_{1}}{x_{2} - x_{1}})y_{1} + (\frac{x-x_{1}}{x_{2} - x_{1}})y_{2}$$
+
+We can use the lininter() function in aertoolbox. Here is an example
+
+```
+d1 = [0.61, -4.34];
+d2 = [2.9, 9.4];
+x = 1.54;
+[y] = lininter(d1,d2,x);
+disp(y)
+```
+
+output:
+
+```
+ y = 1.2400
+```
