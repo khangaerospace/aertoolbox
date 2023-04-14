@@ -77,7 +77,7 @@ We can see n+1 distrinct interpolation points, the rows ( or columns) of the mat
 #### Conditioning:
 The Vandermonde's approach is a systematic approcach to contruct a degree n polynomial interpolant associated with n+1 data points. For n+1 distinct interpolation points, the solution is unique (at least in exact arithmetic). But in particularly for large n, the column become linearly dependent and the system become ill-conditioned. 
 
-we can use the ```function()``` in aertoolox
+we can use the ```function(TODO)``` in aertoolox
 
 Example:
 ```
