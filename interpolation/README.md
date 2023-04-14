@@ -43,7 +43,7 @@ Because th matrix is small, we can express an explicit expressions for the linea
 
 $$p_{1}(x) = (1- \frac{x-x_{1}}{x_{2} - x_{1}})y_{1} + (\frac{x-x_{1}}{x_{2} - x_{1}})y_{2}$$
 
-We can use the lininter() function in aertoolbox. Here is an example
+We can use the [lininter()](https://github.com/khangaerospace/aertoolbox/blob/main/interpolation/lininter.m) function in aertoolbox. Here is an example
 
 ```
 d1 = [0.61, -4.34];
