@@ -1,6 +1,6 @@
 # Interpolation
 
-NOTE: This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematicsto be rendered in between then $...$.
+NOTE: This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematics to be rendered.
 
 Data analysis is crucial in many engineering fields. In order to estimate the value of y at arbitrary points x, which may not be included in the given n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$, interpolation is often used.
 
