@@ -143,4 +143,6 @@ One approach to overcome Runge's Phenomena is to consider a use of different int
 
 $$x_{i} = -cos(\frac{i-1}{n}\pi) \quad j = 1, ..., n+1 $$
 
-as the interpolation points. The points are more clustered toward the end.The points produce a more stable interpolant. 
+as the interpolation points. The points are more clustered toward the end.The points produce a more stable interpolant.
+
+# Piecewise Polynomial Interpolation
