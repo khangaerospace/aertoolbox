@@ -58,3 +58,15 @@ output:
 ```
  y = 1.2400
 ```
+
+### General Case
+We now consider the general case with n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$ where the interpolant points are distinct. We consider an interpolant of the form
+
+$$p_{n}(x)= a_{0} + a_{1}x+...+a_{n}x^{n} = \sum_{j=0}^{n} a_{j}x^{j} \quad i = 1, ..., n+1 $$
+
+WE impose the interpolation conditions in the matrix form:
+
+$$\begin{pmatrix} 1 & x_{1} & ... & x_{1}^n \\\\ . &.\\\\ . &&.\\\\. &&&.\\\\ 1 & x_{n+1} & ... &x_{n+1}^{n}\end{pmatrix}\begin{pmatrix}a_{0}\\\\ a_{1} \\\\.\\\\.\\\\a_{n}\end{pmatrix} = \begin{pmatrix} y_{1} \\\\ y_{2} \\\\.\\\\.\\\\ y_{n+1} \end{pmatrix}$$
+
+We can see n+1 distrinct interpolation points, the rows ( or columns) of the matrix are linearly independent and the matrix is non-singular. We can find the unique solution of this linear system and the associated interpolant. 
+
