@@ -70,3 +70,22 @@ $$\begin{pmatrix} 1 & x_{1} & ... & x_{1}^n \\\\ . &.\\\\ . &&.\\\\. &&&.\\\\ 1 
 
 We can see n+1 distrinct interpolation points, the rows ( or columns) of the matrix are linearly independent and the matrix is non-singular. We can find the unique solution of this linear system and the associated interpolant. 
 
+#### Cost
+- $O(n^3)$: To  contruct the Vandermonde's Matrix
+- $O(n)$: to evaluate each terms and sum them together.
+
+#### Conditioning:
+The Vandermonde's approach is a systematic approcach to contruct a degree n polynomial interpolant associated with n+1 data points. For n+1 distinct interpolation points, the solution is unique (at least in exact arithmetic). But in particularly for large n, the column become linearly dependent and the system become ill-conditioned. 
+
+we can use the ```function()``` in aertoolox
+
+Example:
+```
+TODO
+```
+Output:
+```
+TODO
+```
+
+## Lagrange basis polynomials
