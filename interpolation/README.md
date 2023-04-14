@@ -60,7 +60,7 @@ output:
 ```
 
 ### General Case
-We now consider the general case with n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$ where the interpolant points are distinct. We consider an interpolant of the form
+We now consider the general case with n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$ the interpolant points are distinct. We consider an interpolant of the form
 
 $$p_{n}(x)= a_{0} + a_{1}x+...+a_{n}x^{n} = \sum_{j=0}^{n} a_{j}x^{j} \quad i = 1, ..., n+1 $$
 
@@ -88,4 +88,59 @@ Output:
 TODO
 ```
 
-## Lagrange basis polynomials
+Readmore about ill-conditioning
+
+## Lagrange Basis Polynomials
+
+To overcome ill-conditioning and reduce the computational cost, we can consider a different contruction of Lagrange basis polynomials.
+
+Lagrange basis polynomials associated with n+1 interpolation points $x_i$, $i = 1,2, ... , n+1$. It's a ser of n+1 degree polynomials $l_{j}$ where $j = 1,2, ... , n+1$ with the property
+
+$$l_{j}(x) = \begin{cases} 1, i=j \\\\0, i \neq j\end{cases}$$
+
+For each j, the n+1 constrains define a unique degree n polynomial. The explicit form is:
+
+$$l_{j}(x) = \prod_{0<k<n+1} \frac{x-x_{k}}{x_{j}-x_{k}} \quad j = 1, ..., n+1 $$
+
+We can contruct the interpolant for data points ($x_{i},y_{i}$):
+
+$$p_{n}(x) = \sum_{k = 0}^{n} y_{k}l_{k}(x)$$
+
+For a given degree n and data points ($x_{i},y_{i}$) $i = 1, 2,3,..., n+1$, the polynomialinterpolant construction using the Lagrange basis polynomials is identical to the contructed using the Vandermonde method. 
+
+### Cost
+ 
+ $O(n):$ computation of Lagrange basis at a point require 2n substraction and n divisions
+
+ $O(n^2)$: We repeat the above procedure n + 1 times.
+
+We can use ```function()``` to  contruction of Lagrange basis polynomials.
+
+Example:
+```
+```
+Output:
+```
+```
+## Error analysis
+
+There are a few approach to construct and evaluate polynomial interpolants. 
+
+**Theorem:** Suppose the polynomial interpolant $p_{n}$ interpolates a smooth function $f$ at interpolation points $a = x_{1} < x_{2} < ... < x_{n+1} < b$. Then the error in the polynomial interpolant is bounded from above by 
+
+$$|f(x)-p_{n}(x)| = \frac{1}{(n+1)!}\max_{s∈[a,b]}|f^{(n+1)}(s)|(b-a)^{n+1} \quad ∀x∈[a,b]$$
+
+Key observation:
+1. The interpolation error depends on the n+1 derivative of the underlying function $f^{(n+1)}$. The smaller the n+1 derivative, the more accurate the interpolant. 
+2. The interpolation error depends on the degree n of the interpolant. If $|f^{(n+1)}|$ grow slower than $(n+1)!$, then the interpolation error decreases exponentially with n.
+3. A special case, if the underlying function is a polynomial of degree $m \leq n$, then the interpolation error is zero everywhere.
+
+Read more about [Runge's phenomena](https://github.com/khangaerospace/aertoolbox/blob/main/interpolation/RungePhenomena.md).
+
+## Chebyshev nodes
+
+One approach to overcome Runge's Phenomena is to consider a use of different interpolation points. Instead of using equispaced points, we can use Chebyshev nodes,
+
+$$x_{i} = -cos(\frac{i-1}{n}\pi) \quad j = 1, ..., n+1 $$
+
+as the interpolation points. The points are more clustered toward the end.The points produce a more stable interpolant. 
