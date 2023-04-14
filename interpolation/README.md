@@ -19,11 +19,11 @@ A polynomial interpolant is uniquely characterized by:
 1. The polynomial degree n of the interpolant
 2. The location of the interpolant points.
 
-## Vandermonde's method
+### Vandermonde's method
 
 Vandermonde's method is a systematic approach to contruct polynomial interpolants.
 
-### Linear interpolation (n = 1)
+#### Linear interpolation (n = 1)
 
 The case where we are only given two data points. $(x_{1}, y_{1})$ and $(x_{2},y_{2})$, assuming $(x_{1} \neq x_{2})$. Since there is only 2 data points $(n = 2 - 1 =1)$ we will consider a linear polynomial of the form
 
@@ -59,7 +59,7 @@ output:
  y = 1.2400
 ```
 
-### General Case
+#### General Case
 We now consider the general case with n+1 data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$ the interpolant points are distinct. We consider an interpolant of the form
 
 $$p_{n}(x)= a_{0} + a_{1}x+...+a_{n}x^{n} = \sum_{j=0}^{n} a_{j}x^{j} \quad i = 1, ..., n+1 $$
@@ -70,11 +70,11 @@ $$\begin{pmatrix} 1 & x_{1} & ... & x_{1}^n \\\\ . &.\\\\ . &&.\\\\. &&&.\\\\ 1 
 
 We can see n+1 distrinct interpolation points, the rows ( or columns) of the matrix are linearly independent and the matrix is non-singular. We can find the unique solution of this linear system and the associated interpolant. 
 
-#### Cost
+##### Cost
 - $O(n^3)$: To  contruct the Vandermonde's Matrix
 - $O(n)$: to evaluate each terms and sum them together.
 
-#### Conditioning:
+##### Conditioning:
 The Vandermonde's approach is a systematic approcach to contruct a degree n polynomial interpolant associated with n+1 data points. For n+1 distinct interpolation points, the solution is unique (at least in exact arithmetic). But in particularly for large n, the column become linearly dependent and the system become ill-conditioned. 
 
 we can use the ```function(TODO)``` in aertoolox
@@ -90,7 +90,7 @@ TODO
 
 Readmore about ill-conditioning
 
-## Lagrange Basis Polynomials
+### Lagrange Basis Polynomials
 
 To overcome ill-conditioning and reduce the computational cost, we can consider a different contruction of Lagrange basis polynomials.
 
@@ -108,7 +108,7 @@ $$p_{n}(x) = \sum_{k = 0}^{n} y_{k}l_{k}(x)$$
 
 For a given degree n and data points ($x_{i},y_{i}$) $i = 1, 2,3,..., n+1$, the polynomialinterpolant construction using the Lagrange basis polynomials is identical to the contructed using the Vandermonde method. 
 
-### Cost
+#### Cost
  
  $O(n):$ computation of Lagrange basis at a point require 2n substraction and n divisions
 
@@ -122,7 +122,7 @@ Example:
 Output:
 ```
 ```
-## Error analysis
+### Error analysis
 
 There are a few approach to construct and evaluate polynomial interpolants. 
 
@@ -137,7 +137,7 @@ Key observation:
 
 Read more about [Runge's phenomena](https://github.com/khangaerospace/aertoolbox/blob/main/interpolation/RungePhenomena.md).
 
-## Chebyshev nodes
+### Chebyshev nodes
 
 One approach to overcome Runge's Phenomena is to consider a use of different interpolation points. Instead of using equispaced points, we can use Chebyshev nodes,
 
@@ -145,4 +145,4 @@ $$x_{i} = -cos(\frac{i-1}{n}\pi) \quad j = 1, ..., n+1 $$
 
 as the interpolation points. The points are more clustered toward the end.The points produce a more stable interpolant.
 
-# Piecewise Polynomial Interpolation
+## Piecewise Polynomial Interpolation
