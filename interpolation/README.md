@@ -126,7 +126,7 @@ Output:
 
 There are a few approach to construct and evaluate polynomial interpolants. 
 
-**Theorem:** Suppose the polynomial interpolant $p_{n}$ interpolates a smooth function $f$ at interpolation points $a = x_{1} < x_{2} < ... < x_{n+1} < b$. Then the error in the polynomial interpolant is bounded from above by 
+**Theorem:** Suppose the polynomial interpolant $p_{n}$ interpolates a smooth function $f$ at interpolation points $a = x_{1} < x_{2} < ... < x_{n+1} < b$ . Then the error in the polynomial interpolant is bounded from above by 
 
 $$|f(x)-p_{n}(x)| = \frac{1}{(n+1)!}\max_{s∈[a,b]}|f^{(n+1)}(s)|(b-a)^{n+1} \quad ∀x∈[a,b]$$
 
