@@ -45,7 +45,7 @@ Example of integrating $\int_0^1x dx$:
 fun = @(x) x;
 a = 0;
 b = 1;
-[I] = intmidpoint (fun,a,b)
+[I] = intmidpoint(fun,a,b)
 disp(I)
 ```
 Output I = $\frac{x^2}{2}|_0^1 =0.5$
@@ -53,4 +53,43 @@ Output I = $\frac{x^2}{2}|_0^1 =0.5$
 I = 0.5000
 ```
 
-good approximation for this function.
+
+### Trapezoid rule.
+
+Trapezoid rule is derived from the linear interpolant based on m = 2 interpolation points. Our approximation is given by integrating over $p_1(x)$ on interval [a,b] to get the Trapezoid reule integration:
+
+$$I \approx Q_{NC(2)} = (b-a)(\frac{1}{2}f(a)+\frac{1}{2}f(b))$$
+
+We can use the ```intTrapezoi()``` function in aertoolbox to do midpoint integration
+
+Example of integrating $\int_0^1x dx$:
+```
+fun = @(x) x;
+a = 0;
+b = 1;
+[I] = intmidpoint(fun,a,b)
+disp(I)
+```
+Output I = $\frac{x^2}{2}|_0^1 =0.5$
+```
+I = 0.5000
+```
+
+### Simpson's rule
+
+Simpson’s rule is induced by the quadratic interpolant based on m = 3 equispaced interpolation points, including the endpoints a and b.
+
+We can use the ```intSimpson()``` function in aertoolbox to do midpoint integration
+
+Example of integrating $\int_0^1x dx$:
+```
+fun = @(x) x;
+a = 0;
+b = 1;
+[I] = intmidpoint(fun,a,b)
+disp(I)
+```
+Output I = $\frac{x^2}{2}|_0^1 = 0.5$
+```
+I = 0.500
+```
