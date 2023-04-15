@@ -1,4 +1,4 @@
-% Khang Nguyen code
+
 file = load("_YOUR_DATA_");
 x = file(:,1);
 y = file(:,2);
