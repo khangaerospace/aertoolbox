@@ -50,6 +50,42 @@ This is called backward substitution.
 
 $$\sum_{i=1}^n(1+\sum^{i-1}_{j=1}) \equiv n^2$$
 
+## Using aertoolbox to perform linear solving
+
+Example:
+
+```
+A = [[2 1 0]; [-1 2 -1]; [0 -1 3]];
+b = [1 2 3];
+x_true = A\b';
+x_my = linearsolver(A,b);
+disp("Matlan value using A\b'");
+disp(x_true);
+disp("my value using mylinearsolver(A,b)");
+disp(x_my);
+```
+
+output
+```
+Lower matrix
+    1.0000         0         0
+   -0.5000    1.0000         0
+         0   -0.4000    1.0000
+
+Upper Matrix
+    2.0000    1.0000         0
+         0    2.5000   -1.0000
+         0         0    2.6000
+
+Matlan value using A\b'
+   -0.3077
+    1.6154
+    1.5385
+
+my value using linearsolver(A,b)
+   -0.3077    1.6154    1.5385
+```
+
 ## Appendix
 
 [1] This README.md were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)
