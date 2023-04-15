@@ -210,6 +210,6 @@ Error estimation is
 
 $$E([a,b]) \equiv \frac{1}{15}|Q^{(2)}_{NC(3)}([a,b])-Q_{NC(3)}([a,b])|$$
 
-# Appendix
+## Appendix
 
 [1] This README.md were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)

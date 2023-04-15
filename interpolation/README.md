@@ -247,6 +247,6 @@ $$S''_1(x_1) = 0 \quad and \quad S''_N(x_{N+1}) = 0$$
 - **Not-a-knot spline** Third derivatie at the first and last interfaces to be continuous:
 $$S'''_1(x_2) = S'''_2(x_2) \quad and \quad S'''_{N-1}(x_{N}) = S'''_{N}(x_{N})$$
 
-# Appendix
+## Appendix
 
 [1] This README.md were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)
