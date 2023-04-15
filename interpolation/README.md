@@ -242,9 +242,11 @@ $$S'_1(x_1) = g_L \quad and \quad S'_N(x_{N+1}) = g_{R}$$
     where $g_L$ and $g_R$ are the derivatives specified,
 
 - **Natural Spline** the second derivative at the end points are zero
+
 $$S''_1(x_1) = 0 \quad and \quad S''_N(x_{N+1}) = 0$$
 
 - **Not-a-knot spline** Third derivatie at the first and last interfaces to be continuous:
+
 $$S'''_1(x_2) = S'''_2(x_2) \quad and \quad S'''_{N-1}(x_{N}) = S'''_{N}(x_{N})$$
 
 # Appendix
