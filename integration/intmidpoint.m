@@ -1,3 +1,5 @@
+
+
 function [I] = intmidpoint (fun,a,b)
     % input fun: function we want to integrate
     % input a: start point
