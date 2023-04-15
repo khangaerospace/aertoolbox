@@ -239,7 +239,7 @@ We will have 4N degree of freedom and 4N - 2 constrains when construct a cubic s
 
 $$S'_1(x_1) = g_L \quad and \quad S'_N(x_{N+1}) = g_{R}$$
 
-    where $g_L$ and $g_R$ are the derivatives specified,
+where $g_L$ and $g_R$ are the derivatives specified,
 
 - **Natural Spline** the second derivative at the end points are zero
 
