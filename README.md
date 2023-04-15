@@ -8,8 +8,10 @@ Aertoolbox is a software developed by Aerospace Engineering students at the [Uni
 
 ## Feedback and Contribution 
 
-Since we are students, we are open to feedback!!! You can send us feedback by open an [issue on GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) or email Khang Nguyen at (khang.nguyen@mail.utoronto.ca)
+As aerospace engineering students, we greatly appreciate bug reports, suggestions for new features, and improvements from professional engineers or other students.
 
-You can also help develop the AERtoolbox by creating a [Pull Request](https://github.com/khangaerospace/Training/tree/main/How%20to%20make%20a%20pull%20request)
+To provide feedback, you can either open an [issue on GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) or email Khang Nguyen at (khang.nguyen@mail.utoronto.ca)
 
-Looking forward to hear your feedback and contribution
+If you would like to contribute to the development of AERtoolbox, you can create a [Pull Request](https://github.com/khangaerospace/Training/tree/main/How%20to%20make%20a%20pull%20request)
+
+We look forward to hearing from you and appreciate any contributions you make to improve the AERtoolbox.
