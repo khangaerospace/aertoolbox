@@ -76,4 +76,4 @@ When the system as a large condition number, we call these system as [Ill- condi
 
 ## Appendix
 
-[1] This README.md were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)
+[1] This document were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)
