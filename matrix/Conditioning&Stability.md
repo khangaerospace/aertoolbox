@@ -1,5 +1,7 @@
 # Linear System: Cinditioning and stability
 
+**NOTE:** This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematics to be rendered.
+
 In this document, we will discuss the conditioning of linear system. We will then talk about the stability of LU factorization, andmake modifications to the "vanilla" [LU factorization](https://github.com/khangaerospace/aertoolbox/blob/main/matrix/factorization.md) to improve the stability.
 
 ## Scientific notation
@@ -70,4 +72,8 @@ $$\kappa(A) = \frac{λ_{\max}(A)}{λ_{\min}(A)}$$
 
 For an orthogonal matrix Q, the condition number is unity (κ(Q) = 1) because all of its singular values are 1.
 
+When the system as a large condition number, we call these system as [Ill- condition](https://github.com/khangaerospace/aertoolbox/blob/main/matrix/Illcondition.md)
 
+## Appendix
+
+[1] This README.md were constructed using [AER336](https://engineering.calendar.utoronto.ca/course/aer336h1) lecture note from proffessor Masayuki Yano (2023)
