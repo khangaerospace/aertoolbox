@@ -4,7 +4,7 @@
 
 The definition of a root: given a function is a root (or zero) of $f$ if
 
-$$f(x^*) - 0$$
+$$f(x^*) = 0$$
 
 Then, the goal of a root-finding problem is to find a root of the function.
 
