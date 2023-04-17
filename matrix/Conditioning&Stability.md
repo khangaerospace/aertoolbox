@@ -1,4 +1,4 @@
-# Linear System: Cinditioning and stability
+# Linear System: Conditioning and stability
 
 **NOTE:** This README requires a [MathJax](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related) browser plugin for the mathematics to be rendered.
 
