@@ -35,4 +35,20 @@ We also introduce assumptions on the characteristics of the noise. These assumpt
 Given a parametrized response model $Y_{model}(\cdot;\beta^{true})$ ) and m noisy datapoints we wish to estimate the true parameter $\beta^{true}$. We will in fact estimate both the true parameter β true and the noise standard deviation σ from the data.
 
 One way to estimate $\beta^{true}$  is to consider the maximum likelihood estimator (MLE), the most likely value of the parameter given the measurements. We will denote the MLE by $\hat{\beta}$ The MLE is
-given by the least-squares fit:
+given by the [least-squares fit](https://github.com/khangaerospace/aertoolbox/tree/main/leastsquare):
+
+$$\hat{\beta} = \text{arg min} ||X\beta + Y||_2$$ 
+
+
+Once we estimate the unknown parameter $\beta^{true}$, we may estimate the npit standard deviation by $\sigma$ by $\hat{\sigma}$ given
+
+$$\hat{\sigma} = (\frac{1}{m-1}||X\hat{\beta} -Y||_2^2)^{1/2}$$
+
+## Confidence intervals
+
+### Individual
+
+We will consider two different sets of confidence intervals.  The first is the confidence interval associated with individual parameters: we will construct two confidence intervals $I_0$ and $I_1$ associated with the parameters $\beta_0$ and $\beta_1$ respectively
+
+****
+CONTINUE
