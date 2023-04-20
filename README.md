@@ -6,7 +6,7 @@
 
 Aertoolbox is a software developed by Aerospace Engineering students at the University of Toronto. The software includes code that was developed from classrooms, design teams and more. This is an educational tool to study aerospace engineering and also a reference to the design of aircraft, rockets and satellites.
 
-The goal is for this Github repo to be a one-stop place for Aerospace Engineers and students to use in their design process.
+The goal is for this Github repo to be a one-stop place for Aerospace engineers and students to use in their design process.
 
 ## Feedback and Contribution 
 
