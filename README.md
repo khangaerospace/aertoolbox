@@ -10,7 +10,7 @@ The goal is for this Github repo to be a one-stop place for Aerospace engineers 
 
 ## Community 
 
-JOIN OUR WORLD SPACE COMMUNITY:  https://discord.gg/DU69befN
+JOIN OUR WORLD SPACE COMMUNITY:  https://discord.gg/h4kkNWt4DD
 
 ## Feedback and Contribution 
 
