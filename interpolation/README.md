@@ -9,13 +9,13 @@ Data analysis is crucial in many engineering fields. In order to estimate the va
 [Piecewise Polynomial Interpolation](#piecewise-polynomial-interpolation)
 ## Polynomial Interpolation
 
-We can define the global polynimial interpolation problem as follow: given n+1 distinct data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$, over an interval $[a,b]$ find a degree-n polynomial
+We can define the global polynomial interpolation problem as follow: given n+1 distinct data points ($x_{i},y_{i}$) where $i = 1, 2,3,..., n+1$, over an interval $[a,b]$ find a degree-n polynomial
 
 $$p_{n}(x) = \sum_{j=0}^na_{j}x^{j}$$
 
 such that 
 $$p_{n}(x_i)= y_{i}   \quad\quad i = 1, ..., n+1 $$
-the polynimial $p_n$ is called the interpolation points. The points at which the interpolation matches the underlying data are called the interpolant points.
+the polynomial $p_n$ is called the interpolation points. The points at which the interpolation matches the underlying data are called the interpolant points.
 
 A polynomial interpolant is uniquely characterized by:
 
@@ -24,7 +24,7 @@ A polynomial interpolant is uniquely characterized by:
 
 ### Vandermonde's method
 
-Vandermonde's method is a systematic approach to contruct polynomial interpolants.
+Vandermonde's method is a systematic approach to construct polynomial interpolants.
 
 #### Linear interpolation (n = 1)
 
